@@ -1,0 +1,467 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jjlevine11/ds1002-tut9yt/blob/main/Week%204%20assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Homework - Week 4\n",
+        "\n",
+        "Complete the following blocks as specified in the directions. Run each cell to return the desired output. Save your notebook back to your GitHub repository and submit the GitHub URL for your notebook for review."
+      ],
+      "metadata": {
+        "id": "xJ6ZWHKXW4qY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 1. Data Types\n",
+        "\n",
+        "```python\n",
+        "s = \"Fox\"\n",
+        "x = 17\n",
+        "y = \"3\"\n",
+        "z = \"false\"\n",
+        "```\n",
+        "\n",
+        "Using the variables above answer these questions:"
+      ],
+      "metadata": {
+        "id": "atxtPF2-XXiW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "mdX0VBQgW1-9",
+        "outputId": "207dbff6-b398-4ae0-819b-d3640f02301b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "str"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ],
+      "source": [
+        "# Write a snippet of code that displays the data type (class) of `s`\n",
+        "s = \"Fox\"\n",
+        "type(s)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that adds `x` and `y` and displays their sum.\n",
+        "x = 17\n",
+        "y = 3\n",
+        "x + y"
+      ],
+      "metadata": {
+        "id": "OoLP555BbMWi",
+        "outputId": "1f4e34f5-ce53-42d1-b6ec-2392ffee5c72",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "20"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# How might you transform z into a boolean value, if you had to? Be creative.\n",
+        "z = bool()\n",
+        "z"
+      ],
+      "metadata": {
+        "id": "--XDmwVsbMC0",
+        "outputId": "1102054e-60c1-421a-cae6-824d758d9762",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- - -"
+      ],
+      "metadata": {
+        "id": "zPvfX62VbK40"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 2. Lists\n",
+        "\n",
+        "    mylist = [\"Chicago\",\"New Orleans\", \"Tempe\", \"Denver\", \"Nashville\", \"Albany\"]\n",
+        "\n",
+        "Using the list above, answer these questions:"
+      ],
+      "metadata": {
+        "id": "j0mCENI3XK2i"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that prints out \"Tempe\"\n",
+        "mylist = [\"Chicago\", \"New Orleans\", \"Tempe\", \"Denver\", \"Nashville\", \"Albany\"]\n",
+        "mylist[2]"
+      ],
+      "metadata": {
+        "id": "2szfLXZcYC_7",
+        "outputId": "8d3a0f59-869e-4060-9807-2cd90bf2d25d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Tempe'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that adds \"Atlanta\" to this list and displays the extended list.\n",
+        "mylist.append(\"Atlanta\")\n",
+        "print(mylist)"
+      ],
+      "metadata": {
+        "id": "P6IeQYoTdMhh",
+        "outputId": "a6e5cf86-d88a-449c-bf5d-725a218f2cee",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Chicago', 'New Orleans', 'Tempe', 'Denver', 'Nashville', 'Albany', 'Atlanta']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that prints out only \"New Orleans\", \"Tempe\", \"Denver\".\n",
+        "mylist[1:4]"
+      ],
+      "metadata": {
+        "id": "t43LdDkhdM2N",
+        "outputId": "8accc1b8-9e1f-401b-bf79-12893257d48e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['New Orleans', 'Tempe', 'Denver']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- - -"
+      ],
+      "metadata": {
+        "id": "ATrOT4dYbIVH"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 3. Dictionaries\n",
+        "\n",
+        "    mydict = {\"VA\":\"Richmond\", \"NC\":\"Raleigh\", \"NJ\":\"Trenton\", \"PA\":\"Harrisburg\", \"NY\":\"Albany\"}\n",
+        "\n",
+        "Answer the following questions:"
+      ],
+      "metadata": {
+        "id": "GeXcT_9sYEdx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that returns \"Trenton\".\n",
+        "mydict = {\"VA\":\"Richmond\", \"NC\":\"Raleigh\", \"NJ\":\"Trenton\", \"PA\":\"Harrisburg\", \"NY\":\"Albany\"}\n",
+        "mydict[\"NJ\"]"
+      ],
+      "metadata": {
+        "id": "v3fvvKP4ZUvJ",
+        "outputId": "54d2de31-a621-461d-9246-ba4d3b374406",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Trenton'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that adds \"CO\":\"Denver\" to `mydict`.\n",
+        "# Remember the built-in .update({'key': 'value'}) method.\n",
+        "mydict = {\"VA\":\"Richmond\", \"NC\":\"Raleigh\", \"NJ\":\"Trenton\", \"PA\":\"Harrisburg\", \"NY\":\"Albany\"}\n",
+        "mydict.update({\"CO\": \"Denver\"})\n",
+        "mydict"
+      ],
+      "metadata": {
+        "id": "OEwUkIDNa90b",
+        "outputId": "8836a37d-469b-4d7b-e487-9599ebe83adf",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'VA': 'Richmond',\n",
+              " 'NC': 'Raleigh',\n",
+              " 'NJ': 'Trenton',\n",
+              " 'PA': 'Harrisburg',\n",
+              " 'NY': 'Albany',\n",
+              " 'CO': 'Denver'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that returns all the keys in `mydict`\n",
+        "mydict = {\"VA\":\"Richmond\", \"NC\":\"Raleigh\", \"NJ\":\"Trenton\", \"PA\":\"Harrisburg\", \"NY\":\"Albany\"}\n",
+        "keys = mydict.keys()\n",
+        "print(keys)"
+      ],
+      "metadata": {
+        "id": "VwoLtOILbF2K",
+        "outputId": "97d1192c-f5b8-4848-a417-217c9161734c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dict_keys(['VA', 'NC', 'NJ', 'PA', 'NY'])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- - -"
+      ],
+      "metadata": {
+        "id": "svpBBTSYa5Dh"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 4. NumPy Arrays\n",
+        "\n",
+        "Create an `ndarray` that contains the following values and assign the array to a variable.\n",
+        "\n",
+        "    2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37\n",
+        "\n",
+        "Using that variable, answer the following questions:"
+      ],
+      "metadata": {
+        "id": "DkVtHJBoYW34"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that prints the data type of the elements in the array.\n",
+        "ndarray = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]\n",
+        "print(type(ndarray))"
+      ],
+      "metadata": {
+        "id": "db5UdbrVZSiJ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c5557d71-a32b-4220-c370-a78b3e61c7f0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'list'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that displays `11` from the array.\n",
+        "ndarry[4]"
+      ],
+      "metadata": {
+        "id": "8je9wRG9aoWb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a85eab61-c932-410a-8d59-edabf4d36af2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "11"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write a snippet of code that multiplies each array element by `7` and displays the new values.\n",
+        "ndarray = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]\n",
+        "factor = 7\n",
+        "result = [element * factor for element in ndarray]\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "id": "GBT5RzQfaovb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "987c0d75-d9a5-4772-b5da-6385d2e3e093"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[14, 21, 35, 49, 77, 91, 119, 133, 161, 203, 217, 259]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
